@@ -1,0 +1,19 @@
+<html>
+
+    <body>
+        <h2>Actor Info:</h2>
+
+        <p><%= @actor.name %></p>
+
+        
+        <form action="/actors/<%= @actor.id %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <p>The more I destroy the better I feel</p>
+        <input type="submit" value="DESTROY">
+        </form>
+
+        <a href="/actors">Go To All Actors</a>
+        
+    </body>
+
+</html>

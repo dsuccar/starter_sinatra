@@ -1,0 +1,12 @@
+<html>
+    <title>Edit director</title>
+    <h1>Edit this Director</h1>
+    <div>
+        <form action="/directors/<%= @director.id %>" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+        <label for="director">Director: </label>
+        <input type="text" name="name" value="<%= @director.name%>">
+        <input type="submit" name="Add This Director">
+        </form>
+    </div>
+</html>

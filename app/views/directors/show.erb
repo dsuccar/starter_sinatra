@@ -1,0 +1,19 @@
+<html>
+    <body>
+
+        <div> <h1>Director Info: </h1> </div>
+        <div> <h2><%= @director.name %></h2> </div>
+        <form action="/directors/<%= @director.id %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <p>Press this button to kill off <%= @director.name %></p>
+        <input type="submit" value="KILL">
+
+        
+        
+        </form>
+        
+        <a href="/directors">Go To All Directors</a>
+        
+
+    </body>
+</html>
